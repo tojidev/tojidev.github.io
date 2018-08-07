@@ -284,6 +284,14 @@ p+p {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    /* Style adjustments for viewports that meet the condition */
+    .content-img {
+        visibility: hidden;
+        margin: 0;
+    }
+}
+
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
