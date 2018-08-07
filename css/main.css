@@ -287,7 +287,7 @@ p+p {
 @media only screen and (max-width: 600px) {
     /* Style adjustments for viewports that meet the condition */
     .content-img {
-        visibility: hidden;
+        display: none;
         margin: 0;
     }
 }
