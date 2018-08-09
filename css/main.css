@@ -15,7 +15,7 @@
 
 /*Google fonts*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:300,400,400i,700');
 body {
     font-family: 'Roboto', sans-serif;
     color: #222;
@@ -127,7 +127,7 @@ textarea {
 }
 
 .content-img {
-    padding: 0 1rem 0 0;
+    padding: 0 1rem 1rem 0;
     float: left;
     width: 45%;
 }
@@ -164,16 +164,28 @@ h3 {
 
 p {
     margin-top: 0;
+    margin-bottom: 2em;
 }
 
-p+p {
-    margin-bottom: 2em;
+.lede {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: rgb(38, 36, 123);
+    border-left: 3px solid rgb(38, 36, 123);
+    padding-left: 1rem;
+    margin: 2rem 0;
 }
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.no-float {
+    float: none;
+    width: 100%;
+}
 
 
 /*
