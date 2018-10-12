@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- META -->
+		<title>Web Typography</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="coa-style-2.css" media="all" />
+		<!-- 	Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+SC:400,500|Alegreya+Sans:400,700|Alegreya:400,400i,700" rel="stylesheet">
+		<!-- grid -->
+		<link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
+		<script src="headsupgrid/jquery-1.6.2.min.js"></script>
+		<script src="headsupgrid/hugrid.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		pageUnits = 'px';
+		colUnits = 'px';
+		pagewidth = 860;
+		columns = 5;
+		columnwidth = 126;
+		gutterwidth = 57.5;
+		pagetopmargin = 30;
+		rowheight = 30;
+		gridonload = 'on';
+		makehugrid();
+		setgridonload();
+		});
+		</script>
+		
+	</head>
+	<body>
+		<div class="wrapper">
+			<main>
+			<header>
+				<h1>Beginner's guide to Typography for the web</h1>
+				<!-- <p><em>Note</em>: The <code>mono-spaced</code> words denote the relevant CSS selectors and html tags for setting type for the web.</p> -->
+			</header>
+			
+				<section>
+					
+					<h2>
+					1&ensp;Set your paragraph text first</h2>
+					</h2>
+					
+					<p>Content is king. Choose a <code>font-family</code> for the paragraphs <code>&lt;p&gt;</code> that honours the content. This will set the tone of your layout and create the base to set your headings and subheaders. To create contrast, combine a serif text with sans serif headings, or vice versa (more on combining fonts later). Try to limit your fonts to two styles maximum. Loading too many fonts will slow down your site.</p>
+
+					<h3>choose a comfortable type size for your paragraphs</h3>
+
+					<p>The <code>font-size</code> of your paragraphs will determine how legible the text is. Digital screens need larger type sizes than text on a printed page. Also, a desktop screen requires a bigger typeface than a handheld device such as a tablet or a mobile phone.</p>
+
+					<p class="default">The default paragraph text size in most desktop browsers is 16px, like this line.</p>
+
+					<p>Going below the default size of 16px is not advisable, as it might be too small for comfortable reading. Sizes ranging from 16px to 21px is standard.</p>
+
+					<h3>choose a proportional line-height</h3>
+
+					<p>Running text viewed on the screen needs a bit more space between the lines than on a printed page. A <code>line-height</code> between 140% and 160% makes for comfortable reading on the screen. Wider paragraph widths will need some extra spacing between the lines, as do text set in a sans-serif type. The paragraphs in this page is set in 20px with a line-height of 150% or 1.5. </p>
+					
+					<h3>do not make your paragraphs too wide</h3>
+
+					<p>Paragraphs that are too wide make it difficult for the eye to find the start of the next line. The <code>width</code> of a paragraph should ideally be around 30 to 40 times the size of the type. The text on this page is set at 700px (20 &times; 35) wide.</p>
+
+					<p class="sm">It is better to specify line-height as a percent (%) or a multiplyer (e.g. 140% = 1.4) of the font-size rather than in pixels. It will adjust itself proportionally when the font-size is changed.</p>
+					
+				</section>
+				<section>
+					
+					<h2>2&ensp;Try a typographic scale for rythm</h2>
+					
+					<p>A typographic scale is a set of numbers related to each other in a certain ratio. It serves as a guide for choosing type sizes to create harmony. One such scale is the <em>Fibonacci series</em>, where each number is the sum of the previous two numbers (the numbers below denote pixels):</p>
+					<ul class="series">
+						<li class="one">1</li>
+						<li class="two">2</li>
+						<li class="three">3</li>
+						<li class="five">5</li>
+						<li class="eight">8</li>
+						<li class="thirteen">13</li>
+						<li class="twentyone">21</li>
+						<li class="thirtyfour">34</li>
+						<li class="fiftyfive">55</li>
+						<li class="eightynine">89</li>
+						<li class="onefortyfour">144…</li>
+					</ul>
+					<p>Choose a base <code>font-size</code> for your paragraphs from the series, e.g. 21px, and the larger numbers can be used for headings and subheads and the smaller numbers for secondary text and captions. You can create your own scale or choose two different scales to add visual drama to your design.</p>
+					<p>Remember, a typographic scale is only a guide, not a necessity. You may choose not to use any at all, and depend completely on your own visual judgement.</p>
+					<p class="sm">Look up various typographic scales at <a href="https://www.modularscale.com/?1&em&1.125">modularscale.com</a> </p>
+				</section>
+				<section>
+					
+					<h2>3&ensp;Large type may require some negative letterspace</h2>
+					
+					<p class="no-indt">The default <code>letter-spacing</code> is often too loose for text set in large type. A little bit of negative letterspace is needed to make them right. </p>
+
+					<p class="large-type no-l-s">Default letterspace.</p>
+					<p class="large-type">Letterspace of &minus;1px.</p>
+
+					<h3>add letterspace to uppercase letters</h3>
+					
+					<p>Letterspace <span class="sc">small caps</span> and <span class="uc">uppercase</span> letters. It increases readability and adds visual appeal and contrast to the page. Lowercase and italic do not require any letterspace in most cases.
+					<p class="sm">Letterespace can be positive or negative. It is specified in pixels; e.g. 3px for positive and &minus;3px for negative. </p>
+				</section>
+				<section>
+					<h2>4&ensp;Use headings to mark the start of new content</h2>
+					
+					<p>Do not use headings <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc indiscriminately. Use them to structure the content on a page. Be mindful of the heading hierarchy when designing a website; it's good practice not use the <code>&lt;h1&gt;</code> tag more than once in a page. </p>
+					<p>A heading or subhead should be distinct and stand out from the surrounding copy. A bold version of the paragraph font with ample space above and below should do the job. The top level headings can be in a larger size set to a typographic scale. Subheads set in bold or small caps can be the same size as the paragraph with space above and below to make them visually distinct.</p>
+					<p class="sm">The headings in this page are set at 32px. The subheads are set in small caps in the same size as the copy.</p>
+				</section>
+
+				<section>
+					<h2>5&ensp;Combining fonts</h2>
+					<p>Mixing fonts can be tricky business. Too many different fonts in a page create disharmony and chaos. It's best to stick to not more than two fonts; sticking to one is best and gets the job done in most cases. If combining fonts is necessary, try to select fonts that have similar x-heights. A serif and sans-serif can create contrast; but a bold and regular version of the same font can also achieve the same effect.</p>
+					<p> When mixing different fonts, it's a good practice to choose fonts designed by the same font designer. For instance <em>Minion</em> and <em>Myriad</em> (both designed by Robert Slimbach) or <em>Perpetua</em> and <em>Gill Sans</em> (by Eric Gill) complement each other, making them nice font pairs. Google Fonts provides useful suggestions on font pairings.</p>
+					<p>Mixing fonts from a 'superfamily' is also a good rule to follow. A 'superfamily' is a family of typefaces that consists of serif, sans, small caps etc. An example of a 'superfamily' is <em>Alegreya</em>, designed by Juan Pablo del Peral.</p>
+					<p class="sm"><a href="https://beautifulwebtype.com">Beautiful Web Type</a> has some very nice examples of font pairings from Google Fonts.</p>
+				</section>
+				
+				<div class="info">
+					<p class="default no-my">This page has been set in <em>Alegreya</em>, <em>Alegreya Sans,</em> and <em>Alegreya SC</em>, available from Google Fonts.</p>
+				</div>
+			</main>
+		</div>
+		
+	</body>
+</html>
