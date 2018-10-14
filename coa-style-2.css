@@ -49,6 +49,11 @@ table {
 
 /*styles*/
 
+:root {
+	--red: rgb(202,32,38);
+	--hover: #a1a0a0;
+	}
+
 body {
 	font-family: 'Alegreya', serif;
 	font-size: 20px;
@@ -63,7 +68,7 @@ body {
 
 header {
 	border-bottom: 4px double #ccc;
-	margin-bottom: 26px;
+	margin-bottom: 25px;
 }
 
 section {
@@ -80,10 +85,11 @@ main {
 	padding-left: 1em;
 }
 
-.info {
+.footer {
 	margin-top: 30px;
 	border-top: 1px solid #000;
 	width: 60%;
+	padding-top: 6px;
 	/*margin-left: 1em;*/
 }
 
@@ -92,6 +98,11 @@ main {
 	line-height: calc(0.20833333 * 5);
 	display: inline;
 	margin-right: 14px;
+}
+
+img {
+	margin: 30px 0 30px;
+	display: block;
 }
 
 /*Typography*/
@@ -123,17 +134,20 @@ h3 {
 	font-family: 'Alegreya SC', serif;
 	font-size: 20px;
 	line-height: 1.5;
-	letter-spacing: 2px;
+	letter-spacing: 0.1em;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
 
-/*h5 {
-	font-family: 'Alegreya', serif;
-	font-size: 18px;
-	line-height: 1.444;
-	margin-bottom: 1em;
-}*/
+h4 {
+	font-family: 'Alegreya Sans', serif;
+	font-size: 13px;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	/*margin-top: 8px;
+	margin-bottom: 8px;*/
+}
 
 p {
 	/*margin-bottom: 0.5em;*/
@@ -143,10 +157,28 @@ p+p {
 	text-indent: 1em;
 }
 
+a {
+	font-family: 'Alegreya Sans', sans-serif;
+    color: #000;
+    /*font-weight: 700;*/
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+
+a::after {
+	content: "\2724";
+	font-size: 0.6em;
+	vertical-align: top;
+}
+
+a:hover {
+	color: var(--hover);
+}
+
 code {
 	font-family: monospace;
 	color: #000;
-	background-color: #eee;
+	/*background-color: #eee;*/
 	padding: 2px 4px 3px; 
 }
 
@@ -169,7 +201,7 @@ em {
 	font-family: 'Alegreya Sans', sans-serif;
 	font-size: 14px;
 	line-height: 1.3;
-	color: #c9082b;
+	color: var(--red);
 	position: absolute;
 	top: 50%;
 	left: 102%;
@@ -180,19 +212,24 @@ em {
 }
 
 .sm>a {
-	color: #c9082b;
+	color: var(--red);
 	text-decoration: none;
-	border-bottom: 1px solid #c9082b;
+	/*border-bottom: 1px solid #c9082b;*/
+}
+
+.sm>a:hover {
+	border-bottom: none;
+	color: var(--hover);
 }
 
 .sc {
 	font-family: 'Alegreya SC', serif;
-	letter-spacing: 2px;
+	letter-spacing: 0.10em;
 }
 
 .uc {
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 0.10em;
 }
 
 .no-l-s {
@@ -204,7 +241,7 @@ em {
 }
 
 .red {
-	color: #c9082b;
+	color: rgb(239, 65, 54);
 }
 
 .justified {
@@ -312,6 +349,12 @@ em {
 
 .onefortyfour {
 	font-size: 144px;
+}
+
+.footer ol {
+	font-size: 16px;
+	list-style-type: decimal;
+	line-height: 1.4;
 }
 
 
