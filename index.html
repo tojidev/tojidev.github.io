@@ -10,8 +10,10 @@
 		<link rel="stylesheet" type="text/css" href="coa-style-2.css" media="all" />
 		<!-- 	Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Alegreya+SC:400,500|Alegreya+Sans:400,700|Alegreya:400,400i,700" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Faustina:400,400i,700" rel="stylesheet"> -->
+		
 		<!-- grid -->
-		<link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
+		<!-- <link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
 		<script src="headsupgrid/jquery-1.6.2.min.js"></script>
 		<script src="headsupgrid/hugrid.js"></script>
 		<script type="text/javascript">
@@ -28,99 +30,111 @@
 		makehugrid();
 		setgridonload();
 		});
-		</script>
+		</script> -->
 		
 	</head>
 	<body>
 		<div class="wrapper">
+
+			<img src="imgs/cover.png" alt="cover" class="cover">
 			<main>
 				<header>
-					<h1>Beginner's guide to Typography for the web</h1>
-					<!-- <p><em>Note</em>: The <code>mono-spaced</code> words denote the relevant CSS selectors and html tags for setting type for the web.</p> -->
+					<h1>A Beginner's guide to Typography for the web</h1>
 				</header>
+
+
+
+				<p>Typography is the voice by which the written word speaks to us. It can shout, whisper or talk, and it is our job as a typographer to make that voice heard, in whichever manner the writer intends. This site is meant to introduce the beginner and the student to some basic ground rules of typography primarily for the digital screen, but they hold for the printed page also.</p>
+				<p><em>Note</em>: The <code>monospaced</code> terms refer to the relevant <span class="sc">css</span> selectors and <span class="sc">html</span> tags.</p>
 				
-				<section>
+				<ol class="content">
+					<li>
+						<h2>Set your paragraph text first</h2>
+						
+						<p>Content is king. Choose a <code>font-family</code> for the paragraphs <code>&lt;p&gt;</code> that honours the content. This will set the tone of your layout and create the base to set your headings and subheads. To create contrast, combine a serif text with sans serif headings, or vice versa (more on combining fonts later). Try to limit your fonts to two styles maximum. Loading too many fonts will slow down your site.</p>
+						<h3>choose a comfortable type size for your paragraphs</h3>
+						<p>The <code>font-size</code> of your paragraphs will determine how legible the page is. Digital screens need larger type sizes than text on a printed page. Also, a desktop screen requires a bigger typeface than a handheld device such as a tablet or a mobile phone.</p>
+						<p class="default">The default paragraph text size in most desktop browsers is 16px, like this line.</p>
+						<p>Going below the default size of 16px is not advisable, as it might be too small for comfortable reading. Sizes ranging from 16px to 25px is standard.</p>
+						<h3>choose a proportional line-height</h3>
+						<p>Running text viewed on the screen needs a bit more space between the lines than on a printed page. A <code>line-height</code> between 140% and 160% makes for comfortable reading on the screen. Wider paragraph widths will need some extra spacing between the lines, as do text set in a sans-serif type. The paragraphs in this page are set in 20px with a line-height of 150% or 1.5. </p>
+						
+						<h3>do not make your paragraphs too wide</h3>
+						<p>Paragraphs that are too wide make it difficult for the eye to find the start of the next line. The <code>width</code> of a paragraph should ideally be around 30 to 40 times the size of the type. The text on this page is set at 700px (20 &times; 35) wide.</p>
+						<p class="sm">It is better to specify line-height as a percent (%) or a multiplyer (e.g. 140% = 1.4) of the font-size rather than in pixels. It will adjust itself proportionally when the font-size is changed.</p>
+					</li>
 					
-					<h2>
-					1&ensp;Set your paragraph text first</h2>
-					</h2>
-					
-					<p>Content is king. Choose a <code>font-family</code> for the paragraphs <code>&lt;p&gt;</code> that honours the content. This will set the tone of your layout and create the base to set your headings and subheads. To create contrast, combine a serif text with sans serif headings, or vice versa (more on combining fonts later). Try to limit your fonts to two styles maximum. Loading too many fonts will slow down your site.</p>
-					<h3>choose a comfortable type size for your paragraphs</h3>
-					<p>The <code>font-size</code> of your paragraphs will determine how legible the page is. Digital screens need larger type sizes than text on a printed page. Also, a desktop screen requires a bigger typeface than a handheld device such as a tablet or a mobile phone.</p>
-					<p class="default">The default paragraph text size in most desktop browsers is 16px, like this line.</p>
-					<p>Going below the default size of 16px is not advisable, as it might be too small for comfortable reading. Sizes ranging from 16px to 21px is standard.</p>
-					<h3>choose a proportional line-height</h3>
-					<p>Running text viewed on the screen needs a bit more space between the lines than on a printed page. A <code>line-height</code> between 140% and 160% makes for comfortable reading on the screen. Wider paragraph widths will need some extra spacing between the lines, as do text set in a sans-serif type. The paragraphs in this page are set in 20px with a line-height of 150% or 1.5. </p>
-					
-					<h3>do not make your paragraphs too wide</h3>
-					<p>Paragraphs that are too wide make it difficult for the eye to find the start of the next line. The <code>width</code> of a paragraph should ideally be around 30 to 40 times the size of the type. The text on this page is set at 700px (20 &times; 35) wide.</p>
-					<p class="sm">It is better to specify line-height as a percent (%) or a multiplyer (e.g. 140% = 1.4) of the font-size rather than in pixels. It will adjust itself proportionally when the font-size is changed.</p>
-					
-				</section>
-				<section>
-					
-					<h2>2&ensp;Try a typographic scale for rythm</h2>
-					
-					<p>A typographic scale is a set of numbers related to each other in a certain ratio. It serves as a guide for choosing type sizes to create harmony. One such scale is the <em>Fibonacci series</em>, where each number is the sum of the previous two numbers (the numbers below denote pixels):</p>
-					<ul class="series">
-						<li class="one">1</li>
-						<li class="two">2</li>
-						<li class="three">3</li>
-						<li class="five">5</li>
-						<li class="eight">8</li>
-						<li class="thirteen">13</li>
-						<li class="twentyone">21</li>
-						<li class="thirtyfour">34</li>
-						<li class="fiftyfive">55</li>
-						<li class="eightynine">89</li>
-						<li class="onefortyfour">144…</li>
-					</ul>
-					<p>Choose a base <code>font-size</code> for your paragraphs from the series, e.g. 21px, and the larger numbers can be used for headings and subheads and the smaller numbers for secondary text and captions. You can create your own scale or choose two different scales to add visual drama to your design.</p>
-					<p>Remember, a typographic scale is only a guide, not a necessity. You may choose not to use any at all, and depend completely on your own visual judgement.</p>
-					<p class="sm">Look up various typographic scales at <a href="https://www.modularscale.com/?1&em&1.125">modularscale.com.</a> </p>
-				</section>
-				<section>
-					
-					<h2>3&ensp;Large type may require some negative letterspace</h2>
-					
-					<p class="no-indt">The default <code>letter-spacing</code> is often too loose for text set in large type. A little bit of negative letterspace is needed to make them right. </p>
-					<p class="large-type no-l-s">Default letterspace.</p>
-					<p class="large-type">Negative letterspace.</p>
-					<h3>add letterspace to uppercase letters</h3>
-					
-					<p>Letterspace <span class="sc">small caps</span> and <span class="uc">uppercase</span> letters. It increases readability and adds visual appeal and contrast to the page. Lowercase and italic do not require any letterspace in most cases.
-					<p class="sm">Letterespace can be positive or negative. It is specified in pixels; e.g. 3px for positive and &minus;3px for negative. </p>
-				</section>
-				<section>
-					<h2>4&ensp;Use headings to give structure to your page</h2>
+				
+					<li>
+						
+						<h2>Try a typographic scale for rythm</h2>
+						
+						<p>A typographic scale is a set of numbers related to each other in a certain ratio. It serves as a guide for choosing type sizes to create harmony. One such scale is the <em>Fibonacci series</em>, where each number is the sum of the previous two numbers (the numbers below denote pixels):</p>
+						<ul class="series">
+							<li class="one">1</li>
+							<li class="two">2</li>
+							<li class="three">3</li>
+							<li class="five">5</li>
+							<li class="eight">8</li>
+							<li class="thirteen">13</li>
+							<li class="twentyone">21</li>
+							<li class="thirtyfour">34</li>
+							<li class="fiftyfive">55</li>
+							<li class="eightynine">89</li>
+							<li class="onefortyfour">144…</li>
+						</ul>
+						<p>Choose a base <code>font-size</code> for your paragraphs from the series, e.g. 21px, and the larger numbers can be used for headings and subheads and the smaller numbers for secondary text and captions. You can create your own scale or choose two different scales to add visual drama to your design.</p>
+						<p>Remember, a typographic scale is only a guide, not a necessity. You may choose not to use any at all, and depend completely on your own visual judgement.</p>
+						<p class="sm">Look up various typographic scales at <a href="https://www.modularscale.com/?1&em&1.125">modularscale.com.</a> </p>
+					</li>
+			
+					<li>
+						
+						<h2>Large type may require some negative letterspace</h2>
+						
+						<p class="no-indt">The default <code>letter-spacing</code> is often too loose for text set in large type. A little bit of negative letterspace is needed to make them right. </p>
+						<p class="large-type no-l-s">Default letterspace.</p>
+						<p class="large-type">Negative letterspace.</p>
+						<h3>add letterspace to uppercase letters</h3>
+						
+						<p>Letterspace <span class="sc">small caps</span> and <span class="uc">uppercase</span> letters. It increases readability and adds visual appeal and contrast to the page. Lowercase and italic do not require any letterspace in most cases.
+						<p class="sm">Letterespace can be positive or negative. It is specified in pixels; e.g. 3px for positive and &minus;3px for negative. </p>
+					</li>
+				
+				<li>
+					<h2>Use headings to give structure to your page</h2>
 					
 					<p>Do not use headings <code>&lt;h1&gt;</code> … <code>&lt;h6&gt;</code> indiscriminately. Use them to structure the content of the page. Be mindful of the heading hierarchy when designing a website; it's good practice not use the <code>&lt;h1&gt;</code> tag more than once in a page. </p>
 					<p>A heading or subhead should be distinct from the surrounding copy, but using too many font sizes to differentiate headings and subheads can be messy. A bold version of the paragraph font with ample space above and below for headings, with subheads in small caps or italic is adequate in most cases.</p>
 					<p class="sm">The headings (in bold) and subheads (small caps) in this page are set in the same size as the copy.</p>
-				</section>
-				<section>
-					<h2>5&ensp;Combining fonts</h2>
+				</li>
+				<li>
+					<h2>Combining fonts</h2>
 					<p>Mixing fonts can be tricky business. Too many different fonts in a page create disharmony and chaos. It's best to stick to not more than two fonts; sticking to one is best and gets the job done in most cases. If combining fonts is necessary, try to select fonts that have similar x-heights. A serif and sans-serif can create contrast; but a bold and regular version of the same font can also achieve the same effect.</p>
-					<p> When mixing different fonts, it's a good practice to choose fonts designed by the same font designer. For instance, <em>Minion</em> and <em>Myriad</em> (both designed by Robert Slimbach) or <em>Perpetua</em> and <em>Gill Sans</em> (by Eric Gill) complement each other, making them nice font pairs. <a href="https://fonts.google.com">Google Fonts</a> provides useful suggestions on font pairings.</p>
-					<img src="imgs/font-combo.jpg" alt="font combinations" height="90">
-					<p>Mixing fonts from a 'superfamily' is also a good rule to keep in mind. A 'superfamily' is a family of typefaces that consists of serif, sans, small caps etc. An example of a 'superfamily' is <em>Alegreya</em>, designed by Juan Pablo del Peral.</p>
+					<p> When mixing different fonts, it's a good practice to choose fonts designed by the same font designer. For instance, <em>Minion</em> and <em>Myriad</em> (both designed by Robert Slimbach) or <em>Perpetua</em> and <em>Gill Sans</em> (by Eric Gill) work well together, making them nice font pairs. <a href="https://fonts.google.com">Google Fonts</a> provides useful suggestions on font pairings.</p>
+					<img src="imgs/font-combo.png" alt="font combinations" height="90">
+					<p>Mixing fonts from a 'super family' is also a good rule to keep in mind. A 'super family' is a family of typefaces that consists of serif, sans, small caps etc. An example of a 'superfamily' is <em>Alegreya</em>, designed by Juan Pablo del Peral.</p>
 					<h3>use free fonts with the utmost caution</h3>
-					<p>With a few exceptions, free fonts are not meant for professional use. The few that have been designed by professional type designers are <em>Fira Sans</em>, <em>Source Code Pro</em>, <em>Source Serif Pro</em>, <em>Cooper Hewitt</em>, <em>IBM Plex</em> and <em>Charter</em>. Designed by Matthew Carter, <em>Charter</em> is an excellent screen font. It can be downloaded <a href="https://practicaltypography.com/charter.html">here.</a></p>
+					<p>With a few exceptions, free fonts are not meant for professional use. <a href="https://fonts.google.com">Google Fonts</a> has some excellent ones designed by professional type designers. <em>Fira Sans</em>, <em>Source Sans Pro</em>, <em>Source Serif Pro</em>, <em>IBM Plex</em> and <em>Alegreya</em> are some of them. Matthew Carter's <em>Charter</em> is a very good font for the screen. It can be downloaded <a href="https://practicaltypography.com/charter.html">here.</a></p>
 					
 					<p class="sm"><a href="https://beautifulwebtype.com">Beautiful Web Type</a> has some nice examples of font pairings from Google Fonts. &para; A good source for some quality free fonts is <a href="https://www.fontsquirrel.com">Font Squirrel.</a></p>
-				</section>
-				<section>
-					<h2>6&ensp;Use html entities for symbols</h2>
-					<p>A common mistake is using the letter 'x' for the multiplication sign '&times;'. 3 x 5 is not the same as 3 &times; 5. More confusing is 3 x 5x. Using the html entity for multiplication sign, it can be correctly rendered as 3 &times; 5px. The whole list of html entities can be found on the internet.</p>
-					<p class="sm">You can find a list of html entities <a href="https://www.w3schools.com/html/html_entities.asp">here</a>.
-				</section>
+				</li>
+				<li>
+					<h2>Use html entities for symbols</h2>
+					<p>A common mistake is using the letter 'x' for the multiplication sign '&times;'. 3 x 5 is not the same as 3 &times; 5. An expression like 3x x 5 can be outright confusing. Using the html entity for multiplication sign, it can be correctly rendered as 3x &times; 5. The whole list of html entities can be found on the internet.</p>
+					<p class="sm">You can find a list of html entities <a href="https://www.w3schools.com/html/html_entities.asp">here</a>.</p>
+				</li>
+				<li>
+					<h2>Colour</h2>
+					<p>For body text on a digital screen, try dark grey instead of black. Screens produce colour by emitting light, creating a severe contrast of black type on dazzling white background which can lead to eye fatigue. A very light neutral background can also reduce the contrast on a screen, making it a more comfortable reading experience. </p>
+				</li>
 				
 				<div class="footer">
 					<!-- <h4>Note</h4> -->
 					<ol>
-						<li>This page has been set in <em>Alegreya</em>, <em>Alegreya Sans,</em> and <em>Alegreya SC</em>.</li>
+						<li>This page is set in <em>Alegreya</em>, <em>Alegreya Sans,</em> and <em>Alegreya SC</em>.</li>
 						<li>For a much more detailed discussion on professional typography, visit <a href="https://practicaltypography.com">Practical Typography</a> by Matthew Butterick.</li>
+						<li>There are countless books on typography. <a href="https://www.flipkart.com/elements-typographic-style/p/itmf4m6yah5uhjg3?pid=9780881792126&lid=LSTBOK9780881792126GBRXUX&marketplace=FLIPKART&srno=s_1_1&otracker=search&fm=SEARCH&iid=fa8835ab-ca3b-4513-9fb9-4fef66c07998.9780881792126.SEARCH&ppt=Homepage&ppn=Homepage&ssid=1y7mykt2680000001539666378175&qH=e45c3f4baff26477">The Elements of Typographic Style</a> by Robert Bringhurst is a classic.</li>
 					</ol>
 				</div>
 			</main>
