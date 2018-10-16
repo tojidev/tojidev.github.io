@@ -69,7 +69,7 @@ body {
 
 .cover {
 	display: block;
-	margin-bottom: : 60px;
+	margin-bottom: 60px;
 }
 
 header {
@@ -99,7 +99,7 @@ header {
 main {
 	width: 700px;
 	padding-left: 1em;
-	margin-top: 60px;
+	/*margin-top: 60px;*/
 }
 
 .footer {
@@ -117,7 +117,7 @@ main {
 	margin-right: 14px;
 }
 
-img {
+.illustration {
 	margin: 30px 0 30px;
 	display: block;
 }
@@ -129,12 +129,10 @@ h1 {
 	font-family: 'Alegreya Sans', sans-serif;
 	font-size: 28px;
 	font-weight: 400;
+	/*color: var(--red);*/
 	text-transform: uppercase;
 	line-height: 1.07142857;
 	letter-spacing: 2px;
-	/*padding-bottom: 10px;*/
-	/*border-bottom: 4px double #000;*/
-	/*margin-bottom: 23px;*/
 }
 
 h2 {
@@ -173,6 +171,20 @@ p {
 
 p+p {
 	text-indent: 1em;
+}
+
+.intro {
+	position: relative;
+	font-size: 24px;
+	line-height: 1.25;
+	margin-bottom: 30px;
+}
+
+.intro::first-letter {
+	font-size: 116px;
+	float: left;
+	line-height: 0.75;
+	margin-right: 0.05em;
 }
 
 a {

@@ -36,7 +36,8 @@
 	<body>
 		<div class="wrapper">
 
-			<img src="imgs/cover.png" alt="cover" class="cover">
+			<img src="imgs/cover2.png" alt="cover image" class="cover">
+
 			<main>
 				<header>
 					<h1>A Beginner's guide to Typography for the web</h1>
@@ -44,14 +45,15 @@
 
 
 
-				<p>Typography is the voice by which the written word speaks to us. It can shout, whisper or talk, and it is our job as a typographer to make that voice heard, in whichever manner the writer intends. This site is meant to introduce the beginner and the student to some basic ground rules of typography primarily for the digital screen, but they hold for the printed page also.</p>
-				<p><em>Note</em>: The <code>monospaced</code> terms refer to the relevant <span class="sc">css</span> selectors and <span class="sc">html</span> tags.</p>
+				<p class="intro">Typography is the voice by which the written word speaks to us. It can shout, whisper or talk, and it is our job as a typographer to make that voice heard in whichever manner the writer intends. This site is meant to introduce the beginner and the student to some basic ground rules of typography for the digital screen, but they hold for the printed page as well.
+				<span class="sm">The monospaced terms refer to the relevant CSS selectors and HTML tags.</span></p>
 				
 				<ol class="content">
 					<li>
-						<h2>Set your paragraph text first</h2>
+						<h2>Start by selecting a typeface for the body text</h2>
 						
-						<p>Content is king. Choose a <code>font-family</code> for the paragraphs <code>&lt;p&gt;</code> that honours the content. This will set the tone of your layout and create the base to set your headings and subheads. To create contrast, combine a serif text with sans serif headings, or vice versa (more on combining fonts later). Try to limit your fonts to two styles maximum. Loading too many fonts will slow down your site.</p>
+						<p>Read the content. Then choose a <code>font-family</code> for the paragraphs <code>&lt;p&gt;</code> that honours the content. This will set the tone of your layout and create the base to set your headings and subheads. To create contrast, combine a serif text with sans serif headings, or vice versa (more on combining fonts later).</p>
+						<p>When designing for the web, select fonts that are specifically created for the screen. <a href="https://fonts.google.com">Google Fonts</a> supplies useful information on the fonts it lists. Try to limit your fonts to two styles maximum. Loading too many fonts will slow down your site.</p>
 						<h3>choose a comfortable type size for your paragraphs</h3>
 						<p>The <code>font-size</code> of your paragraphs will determine how legible the page is. Digital screens need larger type sizes than text on a printed page. Also, a desktop screen requires a bigger typeface than a handheld device such as a tablet or a mobile phone.</p>
 						<p class="default">The default paragraph text size in most desktop browsers is 16px, like this line.</p>
@@ -112,7 +114,7 @@
 					<h2>Combining fonts</h2>
 					<p>Mixing fonts can be tricky business. Too many different fonts in a page create disharmony and chaos. It's best to stick to not more than two fonts; sticking to one is best and gets the job done in most cases. If combining fonts is necessary, try to select fonts that have similar x-heights. A serif and sans-serif can create contrast; but a bold and regular version of the same font can also achieve the same effect.</p>
 					<p> When mixing different fonts, it's a good practice to choose fonts designed by the same font designer. For instance, <em>Minion</em> and <em>Myriad</em> (both designed by Robert Slimbach) or <em>Perpetua</em> and <em>Gill Sans</em> (by Eric Gill) work well together, making them nice font pairs. <a href="https://fonts.google.com">Google Fonts</a> provides useful suggestions on font pairings.</p>
-					<img src="imgs/font-combo.png" alt="font combinations" height="90">
+					<img src="imgs/font-combo.png" alt="font combinations" height="90" class="illustration">
 					<p>Mixing fonts from a 'super family' is also a good rule to keep in mind. A 'super family' is a family of typefaces that consists of serif, sans, small caps etc. An example of a 'superfamily' is <em>Alegreya</em>, designed by Juan Pablo del Peral.</p>
 					<h3>use free fonts with the utmost caution</h3>
 					<p>With a few exceptions, free fonts are not meant for professional use. <a href="https://fonts.google.com">Google Fonts</a> has some excellent ones designed by professional type designers. <em>Fira Sans</em>, <em>Source Sans Pro</em>, <em>Source Serif Pro</em>, <em>IBM Plex</em> and <em>Alegreya</em> are some of them. Matthew Carter's <em>Charter</em> is a very good font for the screen. It can be downloaded <a href="https://practicaltypography.com/charter.html">here.</a></p>
@@ -120,9 +122,12 @@
 					<p class="sm"><a href="https://beautifulwebtype.com">Beautiful Web Type</a> has some nice examples of font pairings from Google Fonts. &para; A good source for some quality free fonts is <a href="https://www.fontsquirrel.com">Font Squirrel.</a></p>
 				</li>
 				<li>
-					<h2>Use html entities for symbols</h2>
-					<p>A common mistake is using the letter 'x' for the multiplication sign '&times;'. 3 x 5 is not the same as 3 &times; 5. An expression like 3x x 5 can be outright confusing. Using the html entity for multiplication sign, it can be correctly rendered as 3x &times; 5. The whole list of html entities can be found on the internet.</p>
-					<p class="sm">You can find a list of html entities <a href="https://www.w3schools.com/html/html_entities.asp">here</a>.</p>
+					<h2>x &ne; &times;</h2>
+					<p>Using the letter 'x' for the multiplication sign '&times;' is a common mistake.</p>
+					<p> 3x&nbsp;x&nbsp;5 = 15x is wrong (and confusing).</p>
+					<p>3x&nbsp;&times;&nbsp;5 = 15x is right.</p>
+					<p> <span class="sc">html</span> entities exist for characters not commonly found on the keyboard, as well as for a host of other characters and symbols. The whole list of <span class="sc">html</span> entities can be found on the internet.</p>
+					<p class="sm">In a design program like Illustrator or InDesign, insert the desired character or symbol from the Glyphs panel.</p>
 				</li>
 				<li>
 					<h2>Colour</h2>
