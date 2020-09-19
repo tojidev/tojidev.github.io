@@ -1,149 +1,519 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- META -->
-		<title>Web Typography</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="" />
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="coa-style-2.css" media="all" />
-		<!-- 	Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Alegreya+SC:400,500|Alegreya+Sans:400,700|Alegreya:400,400i,700" rel="stylesheet">
-		<!-- <link rel="stylesheet" href="https://use.typekit.net/sto3uhc.css"> -->
-		
-		<!-- grid -->
-		<link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
-		<script src="headsupgrid/jquery-1.6.2.min.js"></script>
-		<script src="headsupgrid/hugrid.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function() {
-		pageUnits = 'px';
-		colUnits = 'px';
-		pagewidth = 860;
-		columns = 5;
-		columnwidth = 126;
-		gutterwidth = 57.5;
-		pagetopmargin = 30;
-		rowheight = 30;
-		gridonload = 'on';
-		makehugrid();
-		setgridonload();
-		});
-		</script>
-		
-	</head>
-	<body>
-		<div class="wrapper">
 
-			<img src="imgs/cover2.png" alt="cover image" class="cover">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cloudmice</title>
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="cm-styles.css">
 
-			<main>
-				<header>
-					<h1>A Beginner's guide to Typography for the web</h1>
-				</header>
+    <!--    GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
+    <!--    FAVICON-->
+    <link rel="shortcut icon" href="assets/favicon_io/favicon-32x32.png" sizes="32x32" type="image/x-icon">
 
+</head>
 
-				<p class="intro">Typography is the voice by which the written word speaks to us. It can shout, whisper or talk, and it is our job as a typographer to make that voice heard in whichever manner the writer intends. This site is meant to introduce the beginner and the student to some basic ground rules of typography for the digital screen, but they hold for the printed page as well.
-				<span class="sm">The monospaced terms refer to the relevant CSS selectors and HTML tags.</span></p>
-				
-				<ol class="content">
-					<li>
-						<h2>Start by selecting a typeface for body text</h2>
-						
-						<p>Read the content. Then choose a <code>font-family</code> for the paragraphs <code>&lt;p&gt;</code> that honours the content. This will set the tone of your layout and create the base to set your headings and subheads. To create contrast, combine a serif text with sans serif headings, or vice versa (more on combining fonts later).</p>
-						<p>When designing for the web, select fonts that are designed for the screen. <a href="https://fonts.google.com">Google Fonts</a> supplies useful information on the fonts it lists. Try to limit your fonts to two styles maximum. Loading too many fonts will slow down your site.</p>
-						<h3>choose a comfortable type size for your paragraphs</h3>
-						<p>The <code>font-size</code> of your paragraphs will determine how legible the page is. Digital screens need larger type sizes than text on a printed page. Also, a desktop screen requires a bigger typeface than a handheld device such as a tablet or a mobile phone.</p>
-						<p class="default">The default paragraph text size in most desktop browsers is 16px, like this line.</p>
-						<p>Going below the default size of 16px is not advisable, as it might be too small for comfortable reading. Sizes ranging from 16px to 25px is standard.</p>
-						<h3>choose a proportional line-height</h3>
-						<p>Running text viewed on the screen needs a bit more space between the lines than on a printed page. A <code>line-height</code> between 120% and 150% makes for comfortable reading on the screen. Wider paragraph widths need some extra spacing between the lines, as do text set in a sans-serif type. The paragraphs in this page are set in 20px with a line-height of 150% or 1.5. </p>
-						
-						<h3>do not make your paragraphs too wide</h3>
-						<p>Paragraphs that are too wide make it difficult for the eye to scan the lines. The <code>width</code> of a paragraph should ideally be around 30 to 40 times the size of the type. The text on this page is set 700px (20px &times; 35) wide.</p>
-						<p class="sm">It is better to specify line-height as a percent (%) or a multiplyer (e.g. 140% = 1.4) of the font-size rather than in pixels. It will adjust itself proportionally when the font-size is changed.</p>
-					</li>
-					
-				
-					<li>
-						
-						<h2>Try a typographic scale for rythm</h2>
-						
-						<p>A typographic scale is a set of numbers related to each other in a certain ratio. It serves as a guide for choosing type sizes to create harmony. One such scale is the <em>Fibonacci series</em>, where each number is the sum of the previous two numbers (the numbers below denote pixels):</p>
-						<ul class="series">
-							<li class="one">1</li>
-							<li class="two">2</li>
-							<li class="three">3</li>
-							<li class="five">5</li>
-							<li class="eight">8</li>
-							<li class="thirteen">13</li>
-							<li class="twentyone">21</li>
-							<li class="thirtyfour">34</li>
-							<li class="fiftyfive">55</li>
-							<li class="eightynine">89</li>
-							<li class="onefortyfour">144…</li>
-						</ul>
-						<p>Choose a base <code>font-size</code> for your paragraphs from the series, e.g. 21px, and the larger numbers can be used for headings and subheads and the smaller numbers for secondary text and captions. You can create your own scale or choose two different scales to add visual drama to your design.</p>
-						<p>Remember, a typographic scale is only a guide, not a necessity. You may choose not to use any at all, and depend completely on your own visual judgement.</p>
-						<p class="sm">Look up various typographic scales at <a href="https://www.modularscale.com/?1&em&1.125">modularscale.com.</a> </p>
-					</li>
-			
-					<li>
-						
-						<h2>Large type may require some negative letterspace</h2>
-						
-						<p class="no-indt">The default <code>letter-spacing</code> is often too loose for text set in large type. A little bit of negative letterspace is needed to make them right. </p>
-						<p class="large-type no-l-s">Default letterspace.</p>
-						<p class="large-type">Negative letterspace.</p>
-						<h3>add letterspace to uppercase letters</h3>
-						
-						<p>Letterspace <span class="sc">small caps</span> and <span class="uc">uppercase</span> letters. It increases readability and adds visual appeal and contrast to the page. Lowercase and italic do not require any letterspace in most cases.
-						<p class="sm">Letterespace can be positive or negative. E.g. 3px for positive and &minus;3px for negative. </p>
-					</li>
-				
-				<li>
-					<h2>Use headings to give structure to your page</h2>
-					
-					<p>Do not use headings <code>&lt;h1&gt;</code> … <code>&lt;h6&gt;</code> indiscriminately. Use them to structure the content of the page. Be mindful of the heading hierarchy when designing a website; it's good practice not use the <code>&lt;h1&gt;</code> tag more than once in a page. </p>
-					<p>A heading or subhead should be distinct from the surrounding copy, but using too many font sizes to differentiate headings and subheads can be messy. A bold version of the paragraph font with ample space above and below for headings, with subheads in small caps or italic is adequate in most cases.</p>
-					<p class="sm">The headings (in bold) and subheads (small caps) in this page are set in the same size as the copy.</p>
-				</li>
-				<li>
-					<h2>Combining fonts</h2>
-					<p>Mixing fonts can be tricky business. Too many different fonts in a page create disharmony and chaos. It's best to stick to not more than two fonts; sticking to one is best and gets the job done in most cases. If combining fonts is necessary, try to select fonts that have similar x-heights. A serif and sans-serif can create contrast; but a bold and regular version of the same font can also achieve the same effect.</p>
-					<p> When mixing different fonts, it's a good practice to choose fonts designed by the same font designer. For instance, <em>Minion</em> and <em>Myriad</em> (both designed by Robert Slimbach) or <em>Perpetua</em> and <em>Gill Sans</em> (by Eric Gill) work well together, making them nice font pairs. <a href="https://fonts.google.com">Google Fonts</a> provides useful suggestions on font pairings.</p>
-					<img src="imgs/font-combo.png" alt="font combinations" height="90" class="illustration">
-					<p>Mixing fonts from a 'super family' is also a good rule to keep in mind. A 'super family' is a family of typefaces that consists of serif, sans, small caps etc. An example of a 'superfamily' is <em>Alegreya</em>, designed by Juan Pablo del Peral.</p>
-					<h3>use free fonts with the utmost caution</h3>
-					<p>With a few exceptions, free fonts are not meant for professional use. <a href="https://fonts.google.com">Google Fonts</a> has some excellent ones designed by professional type designers. <em>Fira Sans</em>, <em>Source Sans Pro</em>, <em>Source Serif Pro</em>, <em>IBM Plex</em> and <em>Alegreya</em> are some of them. Matthew Carter's <em>Charter</em> is an ideal font for the screen. It can be downloaded <a href="https://practicaltypography.com/charter.html">here.</a></p>
-					
-					<p class="sm"><a href="https://beautifulwebtype.com">Beautiful Web Type</a> has some nice examples of font pairings from Google Fonts. &para; A good source for some quality free fonts is <a href="https://www.fontsquirrel.com">Font Squirrel.</a></p>
-				</li>
-				<li>
-					<h2>x &ne; &times;</h2>
-					<p>Using the letter 'x' for the multiplication sign '&times;' is a common mistake.</p>
-					<p> 3&nbsp;x&nbsp;5 = 15 is wrong.</p>
-					<p>3&nbsp;&times;&nbsp;5 = 15 is right.</p>
-					<p> <span class="sc">html</span> entities exist for characters not commonly found on the keyboard, as well as for a host of other characters and symbols. The whole list of <span class="sc">html</span> entities can be found on the internet.</p>
-					<p class="sm">In a design program like Illustrator or InDesign, insert the desired character or symbol from the Glyphs panel.</p>
-				</li>
-				<li>
-					<h2>Text colour</h2>
-					<p>For body text on a digital screen, try dark grey instead of black. Screens produce colour by emitting light, creating a severe contrast of black type on dazzling white background which can lead to eye fatigue. A very light neutral background can also reduce the contrast on a screen, making it a more comfortable reading experience. </p>
-				</li>
-				
-				<div class="footer">
-					<!-- <h4>Note</h4> -->
-					<ol>
-						<li>This page is set in <em>Alegreya</em>, <em>Alegreya Sans,</em> and <em>Alegreya SC</em>.</li>
-						<li>For a much more detailed discussion on professional typography, visit <a href="https://practicaltypography.com">Practical Typography</a> by Matthew Butterick.</li>
-						<li>There are countless books on typography. <a href="https://www.flipkart.com/elements-typographic-style/p/itmf4m6yah5uhjg3?pid=9780881792126&lid=LSTBOK9780881792126GBRXUX&marketplace=FLIPKART&srno=s_1_1&otracker=search&fm=SEARCH&iid=fa8835ab-ca3b-4513-9fb9-4fef66c07998.9780881792126.SEARCH&ppt=Homepage&ppn=Homepage&ssid=1y7mykt2680000001539666378175&qH=e45c3f4baff26477">The Elements of Typographic Style</a> by Robert Bringhurst is considered a classic.</li>
-					</ol>
-				</div>
-			</main>
-		</div>
-		
-	</body>
+<body>
+    <section class="section has-background-white-bis pt-5">
+        <nav class="navbar has-background-white-bis" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="assets/cm-logo.png" width="" height="">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Features
+                    </a>
+
+                    <a class="navbar-item">
+                        Exhibition
+                    </a>
+
+                    <a class="navbar-item">
+                        Conferences
+                    </a>
+
+                    <a class="navbar-item">
+                        Networking
+                    </a>
+
+                    <a class="navbar-item">
+                        Analytics
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--    COVER-->
+    <section class="section has-background-white-bis">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <h1 class="cm-hero-title mb-4">An online events platform that means business</h1>
+                    <!--
+                    <div class="media">
+                        <figure class="media-left">
+                            <p class="image is-96x96">
+                                <img class="is-rounded" src="assets/sujith-h.jpg">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>&ldquo;Excellent networking features, great user experience and powerful analytics make Cloudmice our preferred business events platform.&rdquo;&mdash; Sujith Haridas, CII</p>
+                            </div>
+                        </div>
+                    </div>
+-->
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-fifth">
+                            <figure class="image is-1x1">
+                                <img class="is-rounded" src="assets/sujith-grn-bck.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p>&ldquo;Excellent networking features, great user experience and powerful analytics make Cloudmice our preferred business events platform.&rdquo;&mdash; Sujith Haridas, CII</p>
+                        </div>
+                    </div>
+                    <div class="level mt-5">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <a class="button is-primary mr-3"><strong>Signup for a demo</strong></a>
+                                <a class="button has-text-weight-semibold">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure class="image">
+                        <img src="assets/hero-img.png" class="mt-neg-4 is-hidden-mobile">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    TOMTOM-->
+    <div class="section has-background-white-ter">
+        <div class="container">
+            <div class="level has-text-centered px-6">
+                <div class="level-item">
+                    <p class="has-border-b-2"><strong>50+ events hosted</strong></p>
+                </div>
+                <div class="level-item">
+                    <p class="has-border-b-2"><strong>1000+ speakers</strong></p>
+                </div>
+                <div class="level-item">
+                    <p class="has-border-b-2"><strong>78,000 attendees</strong></p>
+                </div>
+                <div class="level-item">
+                    <p class="has-border-b-2"><strong>Participants from 60+ countries</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    FEATURES-->
+    <section class="section">
+        <div class="container py-6">
+            <h3 class="cm-title-3 has-text-centered mb-6">Setup and host complex events easily</h3>
+            <div class="columns is-multiline">
+                <div class="column is-4 has-text-centered py-5">
+                    <div class="center-box mb-3">
+                        <figure class="image is-96x96">
+                            <img src="assets/feature-ico-2.jpg">
+                        </figure>
+                    </div>
+                    <p>Virtual Exhibition Halls</p>
+                </div>
+                <div class="column is-4 has-text-centered py-5">
+                    <div class="center-box mb-3">
+                        <figure class="image is-96x96">
+                            <img src="assets/feature-ico-1.jpg">
+                        </figure>
+                    </div>
+                    <p>Virtual Booths</p>
+                </div>
+                <div class="column is-4 has-text-centered py-5">
+                    <div class="center-box mb-3">
+                        <figure class="image is-96x96 ">
+                            <img src="assets/feature-ico-5.jpg ">
+                        </figure>
+                    </div>
+                    <p>Breakout and Demo rooms</p>
+                </div>
+                <div class="column is-4 has-text-centered py-5">
+                    <div class="center-box mb-3">
+                        <figure class="image is-96x96">
+                            <img src="assets/feature-ico-3.jpg">
+                        </figure>
+                    </div>
+                    <p>Networking</p>
+                </div>
+                <div class="column is-4 has-text-centered py-5">
+                    <div class="center-box mb-3">
+                        <figure class="image is-96x96">
+                            <img src="assets/feature-ico-6.jpg">
+                        </figure>
+                    </div>
+                    <p>Live and Recorded Sessions</p>
+                </div>
+                <div class="column is-4 has-text-centered py-5">
+                    <div class="center-box mb-3">
+                        <figure class="image is-96x96 ">
+                            <img src="assets/feature-ico-4.jpg ">
+                        </figure>
+                    </div>
+                    <p>Powerful Analytics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+<section class="section cm-has-background-grey-light cm-has-bck-graphic">
+    <div class="container has-text-centered pt-4 pb-6">
+        <div class="center-box">
+            <figure class="image is-64x64">
+                <img src="assets/favicon_io/android-chrome-192x192.png">
+            </figure>
+        </div>
+        <h3 class="cm-title-2 py-5">Do you want to experience a Cloudmice event?</h3>
+        <a class="button is-primary"><strong>Explore Live Event</strong></a>
+    </div>
+</section>
+-->
+    <!--    LOBBY-->
+    <section class="section">
+        <div class="container">
+            <div class="center-box mb-6">
+                <figure class="image cm-has-box-shadow">
+                    <img src="assets/Lobby%202.jpg" width="100%">
+                </figure>
+            </div>
+            <div class="columns">
+                <div class="column is-6 is-offset-1 py-5">
+                    <h3 class="cm-title-3 mb-5">The Cloudmice lobby: make the right impression</h3>
+                    <ul class="cm-feat-list mb-6">
+                        <li>Excellent advertising opportunities for sponsors</li>
+                        <li>Easy navigation to B2B lounges, exhibitions, conferences and meeting rooms</li>
+                        <li>Aesthetics that can be customized to brand requirements</li>
+                    </ul>
+                    <p class="has-text-weight-semibold"><a class="button is-primary">Know more</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    TESTIMONIAL-->
+    <section class="section is-medium">
+        <div class="container mb-6">
+            <div class="columns">
+                <div class="column is-1 is-offset-5">
+                    <img src="assets/quote-mark.png">
+                </div>
+                <div class="column">
+                    <p class="is-italic is-size-5">Cloudmice has been an amazing partner for us to help us in the necessary tools and technologies that is required to run a virtual event successfully. Be it for attendees, sponsors or speakers, Cloudmice has user-friendly features for everybody and we’re very happy to have this long term event relationship with Cloudmice.&rdquo;</p>
+                    <p><strong>Rajeev Kumar,</strong> XXO Ltd</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section class="section has-background-white-bis">
+        <div class="container">
+            <div class="center-box mb-5">
+                <figure class="image is-32x32">
+                    <img src="assets/favicon_io/favicon-32x32.png">
+                </figure>
+            </div>
+            <h3 class="cm-title-2 has-text-centered mb-6">What customers are saying</h3>
+            <div class="columns">
+                <div class="column cm-has-bck-lquo-graphic">
+                    <p class="is-italic">&ldquo;Be it for attendees, sponsors or speakers, Cloudmice has user-friendly features for everybody and we’re very happy to have this long term event relationship with Cloudmice.&rdquo;</p>
+                    <p class="mt-4"><strong>Rajeev Kumar, XXO Ltd</strong></p>
+                </div>
+                <div class="column cm-has-bck-lquo-graphic">
+                    <p class="is-italic">&ldquo;Cloudmice has been an amazing partner for us to help us in the necessary tools and technologies that is required to run a virtual event successfully. Be it for attendees, sponsors or speakers, Cloudmice has user-friendly features for everybody and we’re very happy to have this long term event relationship with Cloudmice.&rdquo;</p>
+                    <p class="mt-4"><strong>Rajeev Kumar, XXO Ltd</strong></p>
+                </div>
+                <div class="column cm-has-bck-lquo-graphic">
+                    <p class="is-italic">&ldquo;Cloudmice has been an amazing partner for us to help us in the necessary tools and technologies that is required to run a virtual event successfully. Be it for attendees, sponsors or speakers, Cloudmice has user-friendly features for everybody.&rdquo;</p>
+                    <p class="mt-4"><strong>Rajeev Kumar, XXO Ltd</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!--    EXHIBITIONS-->
+    <section class="section">
+        <div class="container mt-neg-8">
+            <div class="center-box mb-6">
+                <figure class="image cm-has-box-shadow">
+                    <img src="assets/Exhibition.png" width="100%">
+                </figure>
+            </div>
+            <div class="columns">
+                <div class="column is-6 is-offset-1 py-5">
+                    <h3 class="cm-title-3 mb-5">Get more bang for the buck at your exhibitions</h3>
+                    <ul class="cm-feat-list mb-6">
+                        <li>Multiple Exhibition Halls</li>
+                        <li>Feature-rich exhibition booths</li>
+                        <li>Powerful analytics to track footfalls</li>
+                    </ul>
+                    <p class="has-text-weight-semibold"><a class="button is-primary">Know more</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <figure class="image cm-has-box-shadow mb-5">
+                        <img src="assets/Multiple%20Halls.png">
+                    </figure>
+                    <h3 class="cm-title-2a mb-4">Spread your exhibition across multiple halls</h3>
+                    <ul class="cm-feat-list">
+                        <li>You can use different exhibition halls for different products</li>
+                        <li>Your clients can navigate easily from one hall to the other</li>
+                        <li>Halls are designed for a great browsing experience</li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <figure class="image cm-has-box-shadow mb-5">
+                        <img src="assets/va-3.gif">
+                    </figure>
+                    <h3 class="cm-title-2a mb-4">Get powerful visitor analytics</h3>
+                    <ul class="cm-feat-list">
+                        <li>Know how many visitors are looking at your hall at any point of time</li>
+                        <li>Get detailed information of the people who visited your stall including repeat visits, time spent, what they engaged with and what they said.</li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <figure class="image cm-has-box-shadow mb-5">
+                        <img src="assets/booth-1.jpg">
+                    </figure>
+                    <h3 class="cm-title-2a mb-4">Give a range of benefits with every stall</h3>
+                    <ul class="cm-feat-list">
+                        <li>List all product literature and communication prominently</li>
+                        <li>Separate meeting room and booth representative with every stall</li>
+                        <li>Visitors can chat, email or video call with the stall owner</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-variable is-8">
+                <div class="column is-7 is-offset-1">
+                    <figure class="image cm-has-box-shadow">
+                        <img src="assets/Multiple%20Halls.png">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h3 class="cm-title-2 my-4">Spread your exhibition across multiple halls</h3>
+                    <ul class="cm-feat-list">
+                        <li>You can use different exhibition halls for different products</li>
+                        <li>Your clients can navigate easily from one hall to the other</li>
+                        <li>Halls are designed for a great browsing experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section is-medium">
+        <div class="container">
+            <div class="columns is-variable is-8">
+                <div class="column is-4 is-offset-1">
+                    <h3 class="cm-title-2 my-4">Give your clients a range of benefits with every stall</h3>
+                    <ul class="cm-feat-list">
+                        <li>List all product literature and communication prominently</li>
+                        <li>Separate meeting room and booth representative with every stall</li>
+                        <li>Visitors can chat, email or video call with the stall owner</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <figure class="image">
+                        <img src="assets/booth-ph.jpg">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-variable is-8">
+                <div class="column is-7 is-offset-1">
+                    <figure class="image cm-has-box-shadow">
+                        <img src="assets/va-3.gif">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h3 class="cm-title-2 my-4">Get powerful visitor analytics</h3>
+                    <ul class="cm-feat-list">
+                        <li>Know how many visitors are looking at your hall at any point of time</li>
+                        <li>Get detailed information of the people who visited your stall including repeat visits, time spent, what they engaged with and what they said.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    TESTIMONIAL-->
+    <section class="section is-medium">
+        <div class="container mb-6">
+            <div class="columns">
+                <div class="column is-1 is-offset-5">
+                    <img src="assets/quote-mark.png">
+                </div>
+                <div class="column">
+                    <p class="is-italic is-size-5">Cloudmice has been an amazing partner for us to help us in the necessary tools and technologies that is required to run a virtual event successfully. Be it for attendees, sponsors or speakers, Cloudmice has user-friendly features for everybody and we’re very happy to have this long term event relationship with Cloudmice.&rdquo;</p>
+                    <p><strong>Rajeev Kumar,</strong> XXO Ltd</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    CONFERENCE-->
+    <section class="section">
+        <div class="container mt-neg-8">
+            <div class="center-box mb-6">
+                <figure class="image cm-has-box-shadow">
+                    <img src="assets/Auditorium%201.jpg" width="100%">
+                </figure>
+            </div>
+            <div class="columns">
+                <div class="column is-6 is-offset-1 py-5">
+                    <h3 class="cm-title-3 mb-5">Be more productive at conferences</h3>
+                    <ul class="cm-feat-list mb-6">
+                        <li>Option to hold parallel sessions</li>
+                        <li>Provision for closed door meetings</li>
+                        <li>Better connections through AI generated networking recommendations</li>
+                    </ul>
+                    <p class="has-text-weight-semibold"><a class="button is-primary">Know more</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-variable is-8">
+                <div class="column is-7 is-offset-1">
+                    <figure class="image cm-has-box-shadow">
+                        <img src="assets/Screen%20Shot%202020-09-11%20at%204.19.19%20PM.png">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h3 class="cm-title-2 my-4">Offer flexibility in conference programs and sessions</h3>
+                    <ul class="cm-feat-list">
+                        <li>Give visitors the option to watch live or recorded sessions</li>
+                        <li>Integrate sessions with <strong>Zoom</strong> and <strong>Jitsi</strong></li>
+                        <li>Live stream with Q&amp;A facility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section is-medium">
+        <div class="container">
+            <div class="columns is-variable is-8">
+                <div class="column is-4 is-offset-1">
+                    <h3 class="cm-title-2 my-4">Give participants the opportunity to make better connections</h3>
+                    <ul class="cm-feat-list">
+                        <li>Access detailed profiles of participants</li>
+                        <li>Search participants along different parameters</li>
+                        <li>Set up meetings or interact real time through email, chat or video calls</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <figure class="image">
+                        <img src="assets/Screen%20Shot%202020-09-11%20at%204.18.02%20PM.png">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-variable is-8">
+                <div class="column is-7 is-offset-1">
+                    <figure class="image cm-has-box-shadow">
+                        <img src="assets/va-3.gif">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h3 class="cm-title-2 my-4">Offer closed door meetings to interested participants
+                    </h3>
+                    <ul class="cm-feat-list">
+                        <li>Give your participants the flexibility to meet in smaller groups with controlled access.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    TESTIMONIAL-->
+    <section class="section is-medium">
+        <div class="container mb-6">
+            <div class="columns">
+                <div class="column is-1 is-offset-5">
+                    <img src="assets/quote-mark.png">
+                </div>
+                <div class="column">
+                    <p class="is-italic is-size-5">Cloudmice has been an amazing partner for us to help us in the necessary tools and technologies that is required to run a virtual event successfully. Be it for attendees, sponsors or speakers, Cloudmice has user-friendly features for everybody and we’re very happy to have this long term event relationship with Cloudmice.&rdquo;</p>
+                    <p><strong>Rajeev Kumar,</strong> XXO Ltd</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    ANALYTICS-->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-variable is-8">
+                <div class="column is-7 is-offset-1">
+                    <figure class="image cm-has-box-shadow">
+                        <img src="assets/Screen%20Shot%202020-09-11%20at%204.38.16%20PM.png">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h3 class="cm-title-2 my-4">Leverage the power of deep analytics
+                    </h3>
+                    <ul class="cm-feat-list">
+                        <li>Stall Analytics</li>
+                        <li>Traffic statistics</li>
+                        <li>Networking statistics</li>
+                        <li>Participant analytics</li>
+                        <li>Drill down list</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
 </html>

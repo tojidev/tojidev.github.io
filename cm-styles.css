@@ -1,0 +1,259 @@
+/*CM HELPERS*/
+
+.mt-neg-1 {
+    margin-top: -10px;
+}
+
+.mt-neg-2 {
+    margin-top: -20px;
+}
+
+.mt-neg-3 {
+    margin-top: -30px;
+}
+
+.mt-neg-4 {
+    margin-top: -40px;
+}
+
+.mt-neg-5 {
+    margin-top: -50px;
+}
+
+.ml-neg-1 {
+    margin-left: -10px;
+}
+
+.ml-neg-2 {
+    margin-left: -20px;
+}
+
+.ml-neg-3 {
+    margin-left: -30px;
+}
+
+.ml-neg-4 {
+    margin-left: -40px;
+}
+
+.ml-neg-5 {
+    margin-left: -50px;
+}
+
+.mt-neg-8 {
+    margin-top: -80px;
+}
+
+.has-border-t {
+    border-top: 1px solid #000;
+}
+
+.has-border-b-2 {
+    border-bottom: 2px solid #000;
+}
+
+.has-border-b-1 {
+    border-bottom: 1px solid #000;
+}
+
+.has-border-l-2 {
+    border-left: 2px solid #000;
+}
+
+.py-5-5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/*BUTTONS*/
+
+.button,
+.input,
+.textarea,
+.select select,
+.file-cta,
+.file-name,
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 2px solid #f24d0a;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1rem;
+    color: #f24d0a;
+    background-color: transparent;
+    height: 2.5em;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-right: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    position: relative;
+    vertical-align: top;
+}
+
+.button.is-primary {
+    background-color: #ff530d;
+}
+
+.button.is-primary:hover,
+.button.is-primary.is-hovered {
+    background-color: #f24d0a;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-primary:active,
+.button.is-primary.is-active {
+    background-color: #ed4907;
+    border-color: transparent;
+    color: #fff;
+}
+
+
+/*FONT*/
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Poppins', sans-serif;
+    /*    color: #1d1d1d;*/
+}
+
+.navbar-item {
+    color: #1d1d1d;
+}
+
+
+/*TYPOGRAPHY*/
+
+.cm-is-color-primary {
+    color: #ff530d;
+}
+
+.cm-primary-link {
+    font-weight: 600;
+    color: #f24d0a;
+}
+
+strong.cm-strong {
+    color: inherit;
+    font-weight: 700;
+}
+
+.cm-hero-title {
+    font-weight: 700;
+    font-size: 4.65rem;
+    line-height: 1.1;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+.cm-title-3 {
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 1.3;
+    color: #000;
+}
+
+.cm-title-2 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.35;
+    color: #000;
+}
+
+.cm-title-2a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.35;
+    color: #000;
+}
+
+
+/*LAYOUT*/
+
+.center-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.cm-feat-list {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 1.35rem;
+}
+
+.cm-feat-list li {
+    margin-bottom: 0.5rem;
+}
+
+.cm-has-bck-graphic {
+    background-image: url("assets/pattern-graphic-gr.png");
+    background-repeat: no-repeat;
+    background-position: 10% 0%;
+    /*    background-size: contain;*/
+    background-origin: padding-box;
+}
+
+.cm-has-bck-lquo-graphic {
+    background-image: url("assets/quote-mark-desat.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    /*    background-size: contain;*/
+    background-origin: padding-box;
+}
+
+.cm-has-bck-rquo-graphic {
+    background-image: url("assets/quote-mark-right-desat.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    /*    background-size: contain;*/
+    background-origin: padding-box;
+}
+
+.cm-has-background-primary-light {
+    background-color: #fffcfa;
+}
+
+.cm-has-background-grey-light {
+    background-color: #fcfcfc;
+}
+
+.cm-has-box-shadow {
+    -webkit-box-shadow: 4px 10px 16px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 4px 10px 16px 0 rgba(0, 0, 0, 0.15);
+    /*    border: 1px solid #ccc;*/
+}
+
+.cm-has-box-shadow-sharp {
+    -webkit-box-shadow: 4px 4px rgba(255, 83, 13, 0.5);
+    box-shadow: 4px 4px rgba(255, 83, 13, 0.5);
+    /*    border: 1px solid #ccc;*/
+}
+
+.cm-has-border-radius {
+    border-radius: 12px;
+}
